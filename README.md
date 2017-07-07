@@ -1,13 +1,13 @@
-# NodeJs Dependecy
-Required Packages
-1.mysql
-npm install mysql --save
-2.hapi
-npm install hapi --save
-3.bcrypt
-npm install bcrypt --save
+# NodeJs Rest Api
 
-Mysql Query:
+```
+####### Dependency Packages  ###########
+mysql : npm install mysql --save
+hapi : npm install hapi --save
+bcrypt : npm install bcrypt --save
+
+
+###### Mysql Query ##############
 Create Database node_db
 CREATE TABLE `users` (
     -> `uid` int(11) AUTO_INCREMENT,
@@ -17,5 +17,7 @@ CREATE TABLE `users` (
     -> PRIMARY KEY (`uid`)
     -> );
     
-Run node server
+######## Run node server ######
 node server.js
+
+Open your browser localhost:3000
