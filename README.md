@@ -21,3 +21,10 @@ CREATE TABLE `users` (
 node server.js
 
 Open your browser localhost:3000
+
+#####  How to install mysql in Ubuntu14 #######
+
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install mysql-server
+mysql -u root -p
