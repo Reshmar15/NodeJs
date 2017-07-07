@@ -1,4 +1,4 @@
-# NodeJs
+# NodeJs Dependecy
 Required Packages
 1.mysql
 npm install mysql --save
@@ -19,5 +19,3 @@ CREATE TABLE `users` (
     
 Run node server
 node server.js
-
-
