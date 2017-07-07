@@ -17,7 +17,7 @@ const connection = MySQL.createConnection({
 
 /****** Create Your Node Server with port 8087 *******/
 server.connection({
-    host: '192.168.4.94',
+    host: 'localhost',
     port: 3000
 });
 connection.connect();
