@@ -166,6 +166,42 @@ server.route({
 
     }
 });
+/*
+ * Update Api
+ * Method : Put
+ * @username : user name(String)
+ * return Type : JSON
+ */
+
+server.route({
+    method: 'PUT',
+    path: '/update/{uid}',
+
+    handler: function (request, reply) {
+        const uid = request.params.uid;
+        const username = request.payload.username;
+        
+        var response = {"status": 401,"message":"Update Failed"}
+        
+        connection.query('UPDATE users SET username = "'+ username +'"WHERE uid = "' + uid + '"', function (error, results, fields) {
+            if (error) throw error;
+            response = {"status": 200,"message":"Update Successfully"}
+            
+            reply(response);
+        });
+       
+
+    },
+    config: {
+        validate: {
+            payload: {
+                username: Joi.string().alphanum().min(3).max(30).required(),
+                password: Joi.string().regex(/^[a-zA-Z0-9]{8,30}$/)
+            }
+        }
+
+    }
+});
 // Start the server
 server.start((err) => {
 
