@@ -1,0 +1,17 @@
+{
+  "name": "Node Rest Api",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "mysql": "^2.17.1",
+    "hapi": "^18.1.0",
+    "bcrypt": "^3.0.6"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "production": "node_modules/.bin/webpack",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
