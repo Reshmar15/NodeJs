@@ -3,7 +3,7 @@
 const Hapi = require('hapi');
 //const MySQL = require('mysql');
 //const Joi = require('joi');
-const Bcrypt = require('bcrypt');
+//const Bcrypt = require('bcrypt');
 // Create a server with a host and port
 const server = new Hapi.Server();
 
