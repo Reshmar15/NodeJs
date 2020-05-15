@@ -1,6 +1,6 @@
 {
-  "name": "Node Rest Api",
-  "version": "0.1.0",
+  "name": "Node Rest Api 15",
+  "version": "0.1.1",
   "private": true,
   "dependencies": {
     "mysql": "^2.17.1",
