@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "mysql": "^2.17.1",
-    "hapi": "^18.1.0",
+    "hapi": "^18.1.0"
   },
   "scripts": {
     "start": "node server.js",
